@@ -387,14 +387,20 @@ if (form) {
 }
 
 // ===== KONAMI CODE → GITHUB =====
+// ===== KONAMI CODE =====
 (function () {
   const code = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+  const page = location.pathname.split('/').pop() || 'index.html';
   let pos = 0;
   document.addEventListener('keydown', e => {
     pos = e.key === code[pos] ? pos + 1 : (e.key === code[0] ? 1 : 0);
     if (pos === code.length) {
       pos = 0;
-      window.open('https://github.com/adcreationsyt/adcreationsyt.github.io', '_blank');
+      if (page === 'index.html' || page === '') {
+        window.location.href = 'hbd.html';
+      } else {
+        window.open('https://github.com/adcreationsyt/adcreationsyt.github.io', '_blank');
+      }
     }
   });
 })();
