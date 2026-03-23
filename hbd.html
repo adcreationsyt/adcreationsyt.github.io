@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Dear Father</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    min-height: 100vh;
+    background: #EDE5D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .card {
+    width: 560px;
+    background: #FAF5EC;
+    border: 1px solid #C9A96E;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gold-band {
+    height: 6px;
+    background: #C9A96E;
+  }
+  .gold-band-inner {
+    height: 2px;
+    background: #FAF5EC;
+    margin: 1px 0;
+  }
+
+  .corner-ornament {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+  }
+  .tl { top: 6px; left: 0; }
+  .tr { top: 6px; right: 0; transform: scaleX(-1); }
+  .bl { bottom: 6px; left: 0; transform: scaleY(-1); }
+  .br { bottom: 6px; right: 0; transform: scale(-1); }
+
+  .card-inner {
+    padding: 3rem 4rem;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .occasion-label {
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #A67C3D;
+    margin-bottom: 1rem;
+  }
+
+  .headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.15;
+    color: #3D2B0F;
+  }
+
+  .headline em {
+    font-style: italic;
+    color: #8B5E1A;
+  }
+
+  .recipient {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #6B4A1C;
+    margin-top: 0.5rem;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1.75rem 0;
+  }
+  .divider-line { flex: 1; height: 0.5px; background: #C9A96E; }
+  .divider-dot { width: 4px; height: 4px; border-radius: 50%; background: #C9A96E; flex-shrink: 0; }
+
+  .body-text {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.9;
+    color: #4A3318;
+  }
+
+  .body-text em {
+    font-style: italic;
+    color: #7A5220;
+  }
+
+  .body-text + .body-text {
+    margin-top: 1.25rem;
+  }
+
+  .signature-block {
+    margin-top: 0.25rem;
+  }
+
+  .signature-from {
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #A67C3D;
+  }
+
+  .signature-name {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 28px;
+    color: #3D2B0F;
+    margin-top: 6px;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="gold-band"><div class="gold-band-inner"></div></div>
+
+  <!-- Corner ornaments -->
+  <svg class="corner-ornament tl" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 8 Q8 32 32 32 Q8 32 8 56" stroke="#C9A96E" stroke-width="0.8" fill="none"/>
+    <path d="M15 8 Q15 26 32 26 Q15 26 15 44" stroke="#C9A96E" stroke-width="0.5" fill="none" opacity="0.5"/>
+    <circle cx="8" cy="8" r="2.5" fill="#C9A96E"/>
+    <circle cx="32" cy="8" r="1.5" fill="none" stroke="#C9A96E" stroke-width="0.7"/>
+    <circle cx="8" cy="32" r="1.5" fill="none" stroke="#C9A96E" stroke-width="0.7"/>
+  </svg>
+  <svg class="corner-ornament tr" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 8 Q8 32 32 32 Q8 32 8 56" stroke="#C9A96E" stroke-width="0.8" fill="none"/>
+    <path d="M15 8 Q15 26 32 26 Q15 26 15 44" stroke="#C9A96E" stroke-width="0.5" fill="none" opacity="0.5"/>
+    <circle cx="8" cy="8" r="2.5" fill="#C9A96E"/>
+    <circle cx="32" cy="8" r="1.5" fill="none" stroke="#C9A96E" stroke-width="0.7"/>
+    <circle cx="8" cy="32" r="1.5" fill="none" stroke="#C9A96E" stroke-width="0.7"/>
+  </svg>
+  <svg class="corner-ornament bl" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 8 Q8 32 32 32 Q8 32 8 56" stroke="#C9A96E" stroke-width="0.8" fill="none"/>
+    <path d="M15 8 Q15 26 32 26 Q15 26 15 44" stroke="#C9A96E" stroke-width="0.5" fill="none" opacity="0.5"/>
+    <circle cx="8" cy="8" r="2.5" fill="#C9A96E"/>
+    <circle cx="32" cy="8" r="1.5" fill="none" stroke="#C9A96E" stroke-width="0.7"/>
+    <circle cx="8" cy="32" r="1.5" fill="none" stroke="#C9A96E" stroke-width="0.7"/>
+  </svg>
+  <svg class="corner-ornament br" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 8 Q8 32 32 32 Q8 32 8 56" stroke="#C9A96E" stroke-width="0.8" fill="none"/>
+    <path d="M15 8 Q15 26 32 26 Q15 26 15 44" stroke="#C9A96E" stroke-width="0.5" fill="none" opacity="0.5"/>
+    <circle cx="8" cy="8" r="2.5" fill="#C9A96E"/>
+    <circle cx="32" cy="8" r="1.5" fill="none" stroke="#C9A96E" stroke-width="0.7"/>
+    <circle cx="8" cy="32" r="1.5" fill="none" stroke="#C9A96E" stroke-width="0.7"/>
+  </svg>
+
+  <div class="card-inner">
+
+    <p class="occasion-label">In celebration of your birthday</p>
+
+    <h1 class="headline">Happy <em>Birthday,</em><br>My Dear Appa</h1>
+
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-dot"></div>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3 C10 7 6 8 6 12 C6 15.3 8.7 18 12 18 C15.3 18 18 15.3 18 12 C18 8 14 7 12 3Z" stroke="#C9A96E" stroke-width="0.8" fill="#E8C97A" opacity="0.7"/>
+        <path d="M12 18 L12 22" stroke="#C9A96E" stroke-width="0.8"/>
+        <path d="M9 20 L15 20" stroke="#C9A96E" stroke-width="0.8"/>
+      </svg>
+      <div class="divider-dot"></div>
+      <div class="divider-line"></div>
+    </div>
+
+    <p class="body-text">
+      i am truly shocked and surprised that you've worked THIS hard to shape my future and do the best for me, i really respect it, you've borrowed money from many people, you're even struggling to pull the family through because of this, and i thought i should repay you by studying and making atleast something as simple as this.
+    </p>
+
+    <p class="body-text">
+      i wish you a happy birthday, and i hope you live a long, happy, life, and i sincerely thank you for bringing me to this world and making so many things possible for me even when it seemed impossible.
+    </p>
+
+    <div class="divider" style="margin: 1.75rem 0 1.5rem;">
+      <div class="divider-line"></div>
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 1 L10.8 6.5 L16.5 6.5 L12 10 L13.8 15.5 L9 12 L4.2 15.5 L6 10 L1.5 6.5 L7.2 6.5 Z" stroke="#C9A96E" stroke-width="0.8" fill="#E8C97A" opacity="0.8"/>
+      </svg>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="signature-block">
+      <p class="signature-from">With all my love,</p>
+      <p class="signature-name">Adithya Manoj AKA ADCreations</p>
+    </div>
+
+  </div>
+
+  <div class="gold-band"><div class="gold-band-inner"></div></div>
+</div>
+
+</body>
+</html>
